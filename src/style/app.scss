@@ -1,0 +1,58 @@
+
+@import './fedbase.scss';
+@import './dracula.css';
+
+// Include your project styles here. 
+// NOTE how there's no file extension. 
+.project-example {
+  @import "bootstrap.min";
+}
+
+.app {
+  display:flex;
+  
+  .main {
+    margin: auto;
+    margin-left: 300px;
+    width: 70%;
+  }
+}
+
+a {
+  color: #0747A6;
+}
+
+nav {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  padding: 20px 30px;
+  background-color: #fbfbfb;
+  height:100%;
+  box-shadow:  0 0 3px rgba(58,77,95,.5);
+  width:180px;
+  position: fixed;  
+  ul {
+    text-align: left;
+    list-style:none;
+    padding:0;
+    text-decoration: none;
+    li {
+      margin-bottom: 22px;
+    }
+  }
+  .logo {
+    height: 120px;
+  }
+}
+
+pre {
+  padding: 1rem 2.5rem;
+}
+
+.project-example {
+  border: 1px solid #CECCCC; 
+  
+  margin: 2rem 0;
+  padding: 2rem;
+}
