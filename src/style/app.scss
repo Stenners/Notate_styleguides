@@ -1,16 +1,18 @@
-
 @import './fedbase.scss';
 @import './dracula.css';
 
-// Include your project styles here. 
-// NOTE how there's no file extension. 
 .project-example {
-  @import "bootstrap.min";
+  border: 1px solid #CECCCC;
+  margin: 2rem 0;
+  padding: 2rem;
+
+  // Include your project styles here. 
+  // NOTE how there's no file extension.
+  // @import "bootstrap.min";
 }
 
 .app {
-  display:flex;
-  
+  display: flex;
   .main {
     margin: auto;
     margin-left: 300px;
@@ -26,19 +28,25 @@ nav {
   font-size: 1rem;
   font-weight: 300;
   text-align: center;
-  padding: 20px 30px;
   background-color: #fbfbfb;
-  height:100%;
-  box-shadow:  0 0 3px rgba(58,77,95,.5);
-  width:180px;
-  position: fixed;  
+  height: 100%;
+  box-shadow: 0 0 3px rgba(58, 77, 95, .5);
+  width: 240px;
+  position: fixed;
+  padding-top: 22px;
   ul {
     text-align: left;
-    list-style:none;
-    padding:0;
+    list-style: none;
+    padding: 0;
     text-decoration: none;
     li {
-      margin-bottom: 22px;
+      padding: 11px 30px;
+    }
+    .heading {
+      margin-top: 1.2rem;
+      font-size: 1.1rem;
+      background-color: white;
+      color: #656565;
     }
   }
   .logo {
@@ -48,11 +56,4 @@ nav {
 
 pre {
   padding: 1rem 2.5rem;
-}
-
-.project-example {
-  border: 1px solid #CECCCC; 
-  
-  margin: 2rem 0;
-  padding: 2rem;
 }

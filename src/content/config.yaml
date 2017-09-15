@@ -16,13 +16,16 @@ sections:
     slug: "colour"
     content: "pages/styleguide/colour.md"
 
-  - title: "Components"
-    slug: "components"
-    content:
-      - title: 'Buttons'
-        src: 'pages/components/buttons.md'
-      - title: 'Alerts'
-        src: 'pages/components/alerts.md'
+  - heading: "Components" # Not sure about this implementation
+
+  - title: "Buttons"
+    slug: "buttons"
+    content: "pages/components/buttons.md"
+
+  - title: "Alerts"
+    slug: "alerts"
+    content: "pages/components/alerts.md"
+
 
   - title: "Markdown Cheatsheet"
     slug: "markdown"

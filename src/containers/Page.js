@@ -3,10 +3,11 @@ import MarkdownPage from '../components/Markdown'
 import FourOhFour from '../components/FourOhFour'
 
 const Page = (props) => {
+  console.log(props);
   let pageContent = props.content.find((x => x.slug === props.page));
+  console.log(pageContent);
+  
   let markdown = pageContent.content;
-
-  console.log(markdown)
   let main;
   if (markdown) {
     main = <MarkdownPage path={markdown} />
