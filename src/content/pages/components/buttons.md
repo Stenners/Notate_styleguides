@@ -1,10 +1,15 @@
+---
+imports:
+  ExampleCode: '../../../components/ExampleCode.js'
+---
 
 Use Bootstrap's custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more
 
 ### Examples
 Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.
 
-<div class="project-example">
+```render
+<ExampleCode>
   <button type="button" class="btn btn-primary">Primary</button>
   <button type="button" class="btn btn-secondary">Secondary</button>
   <button type="button" class="btn btn-success">Success</button>
@@ -15,8 +20,8 @@ Bootstrap includes several predefined button styles, each serving its own semant
   <button type="button" class="btn btn-dark">Dark</button>
 
   <button type="button" class="btn btn-link">Link</button>
-</div>
-
+</ExampleCode>
+```
 
 ```
 <button type="button" class="btn btn-primary">Primary</button>
@@ -30,6 +35,7 @@ Bootstrap includes several predefined button styles, each serving its own semant
 
 <button type="button" class="btn btn-link">Link</button>
 ```
+
 
 > Conveying meaning to assistive technologies
 > Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (e.g. the visible text), or is included through alternative means, such as additional text hidden with the .sr-only class.

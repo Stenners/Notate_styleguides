@@ -6,6 +6,10 @@ partials: "src/themes/swanky-theme/templates/partials"
 snippets: "src/snippets"
 version: "0.0.0"
 
+# Project imports
+imports:
+  - css: "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+
 # These sections will become the nav
 sections:
   - title: "Typography"
@@ -25,7 +29,6 @@ sections:
   - title: "Alerts"
     slug: "alerts"
     content: "pages/components/alerts.md"
-
 
   - title: "Markdown Cheatsheet"
     slug: "markdown"

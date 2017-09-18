@@ -196,18 +196,10 @@ module.exports = {
             loaders: ["style-loader", "css-loader", "sass-loader"]
           },
           // Markdown loader
+
           {
             test: /\.md$/,
-            use: [{
-              loader: "html-loader"
-            }, {
-              loader: "markdown-loader",
-              options: {
-                highlight: function (code) {
-                  return require('highlight.js').highlightAuto(code).value;
-                }
-              }
-            }]
+            loader: 'babel-loader!react-markdown-component-loader'
           },
           // YAML loader
           {

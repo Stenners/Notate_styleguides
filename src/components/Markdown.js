@@ -19,12 +19,17 @@ const createMarkup = (path) => {
     }
   }
 
-  return { __html: mardownCont }
+  //return { __html: mardownCont }
+  return mardownCont.default
+  //return markdownFiles(`./${path}`).default;
 
 };
 
 const MarkdownPage = ({path}) => {
-  return <div dangerouslySetInnerHTML={createMarkup(path)} />
+  const Comp = createMarkup(path);
+  //return <div dangerouslySetInnerHTML={createMarkup(path)} />
+  return <Comp />
+  //return <MarkdownComponent name={'Bob'}/>
 };
 
 export default MarkdownPage
