@@ -12,8 +12,13 @@
   display: flex;
   .main {
     margin: auto;
-    margin-left: 300px;
-    width: 70%;
+    padding: 2rem;
+    padding-bottom: 10rem;
+    @media screen and (min-width: 768px) {
+      padding: 0;
+      margin-left: 23%;
+      width: calc(83% - 240px);
+    }
   }
 }
 
@@ -28,7 +33,8 @@ nav {
   background-color: #fbfbfb;
   height: 100%;
   box-shadow: 0 0 3px rgba(58, 77, 95, .5);
-  width: 240px;
+  width: 0px;
+  overflow: hidden;
   position: fixed;
   padding-top: 22px;
   ul {
@@ -41,12 +47,37 @@ nav {
     }
     .heading {
       margin-top: 1.2rem;
-      font-size: 1.1rem;
+      //font-size: 1.1rem;
+      border-top: 1px solid #EBEBEB;
       background-color: white;
       color: #656565;
     }
   }
   .logo {
-    height: 120px;
+    height: 120px;  
+  }
+  @media screen and (min-width: 768px) {
+    width: 240px;
+  }
+}
+
+.logo-big {
+  height: 20rem;
+}
+
+.colour-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.colour-wrap {
+  margin: 2rem 0;
+  width: 150px;
+  .colour-block {
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+  .colour-border {
+    border: 1px solid #EBEBEB;
   }
 }

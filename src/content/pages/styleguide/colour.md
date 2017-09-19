@@ -1,13 +1,30 @@
-## How we use colour
+---
+imports:
+  ColourGrid: '../../../components/ColourGrid.js'
+  Colour: '../../../components/Colour.js'
+---
 
-Lorem ipsum dolor sit amet, elitr comprehensam vel et, ex eros graece detracto mel. Id debet scripta conclusionemque usu, has in aperiam legimus. Qui in unum patrioque referrentur, at cum dicit essent, usu cu pertinax liberavisse.
+The colours specified below should be used for all Westpac user interfaces. It’s important to understand how the colour system works in a multi-brand environment. It’s also very important to adhere to the accessibility guidelines. :cake:
+
+### Primary UI Palette
+These are the nine core colours used in the digital brand. It’s important to use these colours correctly for their specified purpose.
 
 
-<div class="colour-drop-wrapper">
-  <div class="colour-drop" style="background: #EEEEEE"></div>
-  <div class="colour-drop-meta">
-    <div class="colour-drop-name">White Smoke</div>
-    <div class="colour-drop-code"><strong>RGB</strong> 238 238 238</div>
-    <div class="colour-drop-code"><strong>HEX</strong> #EEEEEE</div>
-  </div>
-</div>
+```render
+<ColourGrid>
+  <Colour variable="brand-01" hex="#3d70b2" />
+  <Colour variable="brand-02" hex="#5596e6" />
+  <Colour variable="brand-03" hex="#41d6c3" />
+  <Colour variable="ui-01" hex="#ffffff" border="true" />
+</ColourGrid>
+```
+
+### Secondary UI Palette
+The secondary palette is a collection of bespoke, brand specific colours. Unlike the primary palette secondary colours do not map to the other brands. Secondary colours are generally used for bespoke brand embellishment: headers, promos, charts, diagrams etc. They are unique to the brand and must not be used anywhere else.
+
+``` render
+<ColourGrid>
+  <Colour variable="brand-01" hex="#3d70b2" />
+  <Colour variable="brand-02" hex="#5596e6" />
+</ColourGrid>
+```

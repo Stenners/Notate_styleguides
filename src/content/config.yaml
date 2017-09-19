@@ -18,7 +18,7 @@ imports:
 sections:
   - title: "Colour"
     slug: "colour"
-    content: "pages/styleguide/colour.md" 
+    content: "pages/styleguide/colour.md"
 
   - title: "Typography"
     slug: "typography"

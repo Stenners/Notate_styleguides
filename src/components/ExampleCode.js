@@ -14,8 +14,6 @@ for (let value of jsImport) {
   jsFiles += `<script src="${value.src}"></script>`
 }
 
-console.log(styleFiles, jsFiles)
-
 let initialContent = `<!DOCTYPE html><html><head>${styleFiles}</head><body><div></div>${jsFiles}</body></html>`
 
 class ExampleCode extends React.Component {
