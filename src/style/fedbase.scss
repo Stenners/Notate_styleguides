@@ -8,7 +8,7 @@ html {
   -webkit-font-smoothing: antialiased;
   color: #082947;
   font-family: 'Roboto', Helvetica, sans-serif;
-  font-weight: 100;
+  font-weight: 300;
 }
 body {
   margin:0;
@@ -18,7 +18,6 @@ p {
   line-height: 1.7rem;
   margin-top: 1.5rem;
   margin-bottom: 0;
-  font-weight: 300;
 }
 ul,
 ol {
@@ -38,8 +37,12 @@ ol ol {
 }
 blockquote {
   line-height: 1.5rem;
+  margin: 0;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #ECECEC;
+  border-left: 2px solid #0088FF;
   p {
     margin:0;
     padding:0;

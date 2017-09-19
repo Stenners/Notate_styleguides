@@ -1,11 +1,11 @@
+@import './dracula';
 @import './fedbase.scss';
-@import './dracula.css';
 
 .project-example {
-  border: 1px solid #CECCCC;
-  margin: 2rem 0;
-  width: 100%;
-  border:none;
+  border: 1px dashed #CECCCC;
+  padding: 1rem;
+  margin: 2rem 0 0;
+  width: 97%;
 }
 
 .app {
@@ -49,8 +49,4 @@ nav {
   .logo {
     height: 120px;
   }
-}
-
-pre {
-  padding: 1rem 2.5rem;
 }

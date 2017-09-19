@@ -3,12 +3,20 @@ import ReactDOM from 'react-dom'
 import Frame from 'react-frame-component'
 import Config from '../content/config.yaml'
 
-const imports = Config.imports
-for (let value of imports) {
-  console.log(value);
+const styleImport = Config.imports.css
+const jsImport = Config.imports.js
+let styleFiles = '', jsFiles = ''
+
+for (let value of styleImport) {
+  styleFiles += `<link rel="stylesheet" href="${value.src}" />`
+}
+for (let value of jsImport) {
+  jsFiles += `<script src="${value.src}"></script>`
 }
 
-let initialContent = `<!DOCTYPE html><html><head><link rel="stylesheet" href="${imports[0].css}" /></head><body><div></div></body></html>`
+console.log(styleFiles, jsFiles)
+
+let initialContent = `<!DOCTYPE html><html><head>${styleFiles}</head><body><div></div>${jsFiles}</body></html>`
 
 class ExampleCode extends React.Component {
 
@@ -27,7 +35,7 @@ class ExampleCode extends React.Component {
   }
   
   render() {
-    return <Frame style={{width:'100%', margin:'2rem 0', height:this.state.iFrameHeight, overflow:'auto'}} frameBorder="0" initialContent={initialContent}>{this.props.children}</Frame>
+    return <Frame className="project-example" style={{height:this.state.iFrameHeight}} frameBorder="0" initialContent={initialContent}>{this.props.children}</Frame>
   }
   
 };

@@ -1,10 +1,13 @@
 import React from 'react'
+import MarkdownPage from '../components/Markdown'
 
 const Home = (props) => {
-  console.log(props)
-  return (<div className="main">
-    <h1>{props.content.title}</h1>
-  </div>);
-};
+
+  return (
+    <div className="main">
+      <MarkdownPage path={'pages/home.md'} />
+    </div>
+  )
+}
 
 export default Home

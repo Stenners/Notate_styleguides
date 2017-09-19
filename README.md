@@ -1,12 +1,14 @@
-# FEDocs
-POC using React, that renders Markdown with a YAML config.
+# FEDocs (working title)
 
-## Component libarary and style guide starter
+A documentation framework aimed at rapid rollout of style guides and component / pattern libraries.
+Pull into your project and customise the baseline content, or pull it apart and make it your own.
+
+## How to use
+
 
 ## Roadmap
 * Search
 * React & Angular components
-
 
 
 ## Available Scripts
@@ -33,5 +35,4 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
-
-See the section about [deployment](#deployment) for more information.
+.

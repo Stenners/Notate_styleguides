@@ -8,28 +8,32 @@ version: "0.0.0"
 
 # Project imports
 imports:
-  - css: "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+  css: 
+    - src: "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    - src: "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.other.css"
+  js:
+    - src: "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
 
 # These sections will become the nav
 sections:
+  - title: "Colour"
+    slug: "colour"
+    content: "pages/styleguide/colour.md" 
+
   - title: "Typography"
     slug: "typography"
     content: "pages/styleguide/typography.md"
 
-  - title: "Colour"
-    slug: "colour"
-    content: "pages/styleguide/colour.md"
-
   - heading: "Components" # Not sure about this implementation
-
-  - title: "Buttons"
-    slug: "buttons"
-    content: "pages/components/buttons.md"
 
   - title: "Alerts"
     slug: "alerts"
     content: "pages/components/alerts.md"
+    
+  - title: "Buttons"
+    slug: "buttons"
+    content: "pages/components/buttons.md"
 
-  - title: "Markdown Cheatsheet"
-    slug: "markdown"
-    content: "pages/markdown.md"
+  - title: "Collapse"
+    slug: "collapse"
+    content: "pages/components/collapse.md"
