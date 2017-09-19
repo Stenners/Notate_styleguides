@@ -3,10 +3,13 @@
 A documentation framework aimed at rapid rollout of style guides and component / pattern libraries.
 Pull into your project and customise the baseline content, or pull it apart and make it your own.
 
-## How to use
-
+## Quickstart
+1. Check this repo out into your project, wherever it makes sense. 
+2. run `yarn`
+3. run 'yarn start`
 
 ## Roadmap
+* Better design
 * Search
 * React & Angular components
 

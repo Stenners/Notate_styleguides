@@ -196,7 +196,6 @@ module.exports = {
             loaders: ["style-loader", "css-loader", "sass-loader"]
           },
           // Markdown loader
-
           {
             test: /\.md$/,
             loader: 'babel-loader!react-markdown-component-loader'
