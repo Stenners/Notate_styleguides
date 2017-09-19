@@ -9,11 +9,12 @@ Pull into your project and customise the baseline content, or pull it apart and 
 3. run `yarn start`
 4. start configuring `src/content/config.yaml`
 
-## Roadmap
-* Better design
+## To Do
+* Typography Component
 * Search
 * React & Angular component compatibility
 * Shortcodes for internal compoennts
+* Better design
 
 
 ## Available Scripts
