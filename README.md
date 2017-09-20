@@ -10,7 +10,8 @@ Pull into your project and customise the baseline content, or pull it apart and 
 4. start configuring `src/content/config.yaml`
 
 ## How it works
-Notate is built on Markdown and React. It's configured via a centreal YAML file and with content coming from Markdown files in `/src/content`. The Markdown is then compiled at build and bundled.  
+Notate is built on Markdown and React. It's configured via a central YAML file, with content coming from Markdown files in `/src/content`.  
+The Markdown is then compiled at build and bundled.  
 Pull into your project and customise the baseline content, or pull it apart and make it your own! :boom:
 
 ## To Do
