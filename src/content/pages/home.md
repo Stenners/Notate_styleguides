@@ -1,6 +1,6 @@
 ## How it works
-Build on Markdown and React.
-Pull into your project and customise the baseline content, or pull it apart and make it your own.
+Notate is built on Markdown and React. It's configured via a centreal YAML file and with content coming from Markdown files in `/src/content`. The Markdown is then compiled at build and bundled.  
+Pull into your project and customise the baseline content, or pull it apart and make it your own! :boom:
 
 
 ## Quickstart
