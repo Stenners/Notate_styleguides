@@ -1,5 +1,5 @@
 @import './dracula';
-@import './fedbase.scss';
+@import './typebase.scss';
 
 .project-example {
   border: 1px dashed #CECCCC;
@@ -12,12 +12,16 @@
   display: flex;
   .main {
     margin: auto;
-    padding: 2rem;
-    padding-bottom: 10rem;
     @media screen and (min-width: 768px) {
       padding: 0;
-      margin-left: 23%;
-      width: calc(83% - 240px);
+      margin-left: 240px;
+      width: calc(100% - 240px);
+    }
+    .content {
+      padding: 0 2rem;
+      padding-bottom: 10rem;
+      width: 80%;
+      margin: auto;
     }
   }
 }
@@ -59,6 +63,25 @@ nav {
   }
   @media screen and (min-width: 768px) {
     width: 240px;
+  }
+}
+
+.hero {
+  padding: 3rem 8rem 5rem;
+  background: linear-gradient(#9e15e4, transparent), linear-gradient(90deg, #49c4ff, transparent), linear-gradient(-90deg, #2dead2, transparent);
+	color:white;
+  background-blend-mode: screen;
+  //text-align: center;
+  
+  h1 {
+    font-size: 8rem;
+    color: #ffffff;
+    text-shadow: 0 0 4px rgba(7, 73, 166, 0.3);
+  }
+  h2 {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 2rem;
   }
 }
 

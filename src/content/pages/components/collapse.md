@@ -2,7 +2,7 @@
 imports:
   ExampleCode: '../../../components/ExampleCode.js'
 ---
-
+# Collapse
 Toggle the visibility of content across your project with a few classes and our JavaScript plugins.
 
 ## Example

@@ -1,4 +1,4 @@
-# Notate (working title)
+# Notate
 
 A documentation framework aimed at rapid rollout of style guides and component / pattern libraries.
 Pull into your project and customise the baseline content, or pull it apart and make it your own.
@@ -8,14 +8,17 @@ Pull into your project and customise the baseline content, or pull it apart and 
 2. run `yarn`
 3. run `yarn start`
 4. start configuring `src/content/config.yaml`
+  
+  
+## How it works
+  
 
 ## To Do
-* Typography Component
 * Search
 * React & Angular component compatibility
 * Shortcodes for internal compoennts
 * Better design
-
+  
 
 ## Available Scripts
 

@@ -1,0 +1,10 @@
+.typography {
+  display: flex;
+  justify-content: space-between;
+  .glyph {
+    flex-grow: 1;
+  }
+  .more {
+    flex-grow: 2;
+  }
+}

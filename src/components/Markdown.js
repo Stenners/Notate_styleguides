@@ -3,11 +3,11 @@ import slugify from '../utils/slugify'
 
 const createMarkup = (path) => {
 
-  const markdownFiles = require.context('../content/', true /* search subdirectories */, /\.md$/)  
+  const markdownFiles = require.context('../content/', true, /\.md$/)
 
   let mdPath
   let mardownCont = ''
-  
+
   if (typeof path === 'string') {
     mdPath = `./${path}`
     mardownCont = markdownFiles(`./${path}`)
@@ -26,7 +26,7 @@ const createMarkup = (path) => {
 
 const MarkdownPage = ({path}) => {
   const Comp = createMarkup(path)
-  return <Comp />
+  return <div className="content"><Comp/></div>
 };
 
 export default MarkdownPage

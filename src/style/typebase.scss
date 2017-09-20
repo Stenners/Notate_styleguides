@@ -1,6 +1,7 @@
 /*! Typebase.less v0.1.0 | MIT License */
 /* Setup */
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300');
+
 html {
   /* Change default typefaces here */
   font-family: serif;
@@ -40,9 +41,9 @@ blockquote {
   margin: 0;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border: 1px solid #ECECEC;
-  border-left: 2px solid #0088FF;
+  border-left: 2px solid #429eea;
   p {
     margin:0;
     padding:0;
@@ -60,6 +61,7 @@ h6 {
   margin-bottom: 0;
   line-height: 1.5rem;
   font-weight: 300;
+  color:#074174;
 }
 h1 {
   font-size: 3.6rem;

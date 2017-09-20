@@ -3,6 +3,7 @@ imports:
   ColourGrid: '../../../components/ColourGrid.js'
   Colour: '../../../components/Colour.js'
 ---
+# Colour
 
 The colours specified below should be used for all Westpac user interfaces. It’s important to understand how the colour system works in a multi-brand environment. It’s also very important to adhere to the accessibility guidelines. :cake:
 

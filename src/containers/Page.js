@@ -15,7 +15,7 @@ const Page = (props) => {
 
   return (
     <div className="main">
-      <h1>{pageContent.title}</h1>
+      {/* <h1>{pageContent.title}</h1> */}
       {main}
     </div>
   );
