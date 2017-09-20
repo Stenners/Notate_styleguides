@@ -16,7 +16,7 @@ const typoStyle = {
 }
 const glyph = {
   width: '20%',
-  fontSize: '100',
+  fontSize: '100px',
   padding: '0 0 0 20px'
 }
 

@@ -5,9 +5,9 @@ const Colour = (props) => {
   let colourBlock = []
   const hasBorder = props.border ? '1px solid #ebebeb' : ''
 
-  Object.keys(props).forEach(function (key) {
+  Object.keys(props).forEach(function (key, i) {
     if (key!=='border') {
-      colourBlock.push(<div>{props[key]}</div>)
+      colourBlock.push(<div key={i}>{props[key]}</div>)
     }
   })
 
