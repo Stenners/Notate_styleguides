@@ -16,7 +16,7 @@ Pull into your project and customise the baseline content, or pull it apart and 
 ## To Do
 * Search
 * React & Angular component compatibility
-* Shortcodes for internal compoennts
+* Shortcodes for internal components
 * Better design
   
 

@@ -2,7 +2,7 @@
  * https://github.com/dracula/highlightjs
  */
 
-pre {
+pre code {
   display: block;
   overflow-x: auto;
   padding: 1.5em;

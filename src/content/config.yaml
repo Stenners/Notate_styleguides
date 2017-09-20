@@ -1,10 +1,8 @@
 # Main config file
-title: "Component library demo"
-theme: "src/themes/swanky-theme"
-layouts: "src/themes/swanky-theme/templates/layouts"
-partials: "src/themes/swanky-theme/templates/partials"
-snippets: "src/snippets"
-version: "0.0.0"
+title: "notate"
+description: "A documentation framework for rapid rollout of style guides and component / pattern libraries."
+repo: 'https://github.com/Stenners/Notate'
+version: "0.1.0"
 
 # Project imports
 imports:

@@ -1,16 +1,15 @@
 import React from 'react'
+import MarkdownPage from '../components/Markdown'
 
 const Home = (props) => {
+  const content = props.content
   return (
     <div className="main">
       <div className="hero">
-        <h1>notate</h1>
-        <h2>A documentation framework for rapid rollout of style guides and component / pattern libraries.</h2>
+        <h1>{content.title}</h1>
+        <h2>{content.description}</h2>
       </div>
-      <div className="content">
-        <h3>Built using Markdown and React</h3>
-        {/* <img src={explanationIllustration} /> */}
-      </div>
+      <MarkdownPage path={'pages/home.md'} />
     </div>
   )
 }

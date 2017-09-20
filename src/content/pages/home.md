@@ -1,18 +1,20 @@
-# FEDocs (working title)
-
-A documentation framework aimed at rapid rollout of style guides and component / pattern libraries.
+## How it works
+Build on Markdown and React.
 Pull into your project and customise the baseline content, or pull it apart and make it your own.
+
 
 ## Quickstart
 1. Check this repo out into your project, wherever it makes sense. 
-2. run `yarn`
-3. run 'yarn start`
+2. run `$ yarn`
+3. run `$ yarn start`
+4. start configuring `src/content/config.yaml`
 
-## Roadmap
-* Better design
+## To Do
 * Search
-* React & Angular components
-
+* React & Angular component compatibility
+* Shortcodes for internal components
+* Better design
+  
 
 ## Available Scripts
 

@@ -5,6 +5,7 @@ import ScrollToTop from '../utils/ScrollToTop'
 import Nav from './Nav'
 import Home from './Home'
 import Page from './Page'
+import Footer from './Footer'
 import Config from '../content/config.yaml'
  
 import '../style/app.scss'; 
@@ -18,6 +19,7 @@ const App = () => (
         <Route exact path='/' render={(props) => (<Home content={Config} />)} />
         <Route path='/:page' render={(props) => (<Page content={Config.sections} page={props.match.params.page} />)} />
       </Switch>
+      <Footer info={Config}/>
     </div>
     </ScrollToTop>
   </BrowserRouter>

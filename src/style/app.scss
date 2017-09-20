@@ -10,6 +10,7 @@
 
 .app {
   display: flex;
+  flex-direction: column;
   .main {
     margin: auto;
     @media screen and (min-width: 768px) {
@@ -19,10 +20,24 @@
     }
     .content {
       padding: 0 2rem;
-      padding-bottom: 10rem;
+      padding-bottom: 9rem;
       width: 80%;
       margin: auto;
     }
+  }
+}
+
+footer {
+  background-color: #f3f3f3;
+  padding: 2rem 4rem;
+  font-size: 0.8rem;
+  color: #333;
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-left: 240px;
+  & > div:last-child {
+    text-align: right;
   }
 }
 
@@ -104,4 +119,9 @@ nav {
   .colour-border {
     border: 1px solid #EBEBEB;
   }
+}
+
+.github-link {
+  fill: #8c9ba5;
+  margin-right: 0.5rem;
 }
