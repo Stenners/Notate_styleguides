@@ -1,13 +1,17 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import logo from '../style/svg/compass.svg'
+import logo2 from '../style/svg/nlogo2.svg'
+import logo1 from '../style/svg/nlogo1.svg'
 
 const Nav = (props) => {
   let link;
   let headingClass;
+  let headingText = "<Λ/>"
   return (
     <nav>
-      <Link to={'/'}><img className="logo" src={logo} alt="props.title"/></Link>
+      {/* <Link to={'/'}><img className="logo" src={logo1} alt="props.title"/></Link> */}
+      <Link to={'/'}><img className="logo" src={logo2} alt="props.title"/></Link>
+      {/* <Link to={'/'}><h1>{headingText}</h1></Link> */}
       <ul>
       {props.navItems.map((item, i) => {
         if (item.slug) {

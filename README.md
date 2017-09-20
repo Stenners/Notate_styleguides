@@ -1,4 +1,4 @@
-# FEDocs (working title)
+# Notate (working title)
 
 A documentation framework aimed at rapid rollout of style guides and component / pattern libraries.
 Pull into your project and customise the baseline content, or pull it apart and make it your own.

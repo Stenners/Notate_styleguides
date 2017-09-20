@@ -1,7 +1,7 @@
 import React from 'react'
 import MarkdownPage from '../components/Markdown'
 
-import logo from '../style/svg/compass.svg'
+import logo from '../style/svg/nlogo2.svg'
 
 const Home = (props) => {
 
