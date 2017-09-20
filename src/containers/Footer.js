@@ -1,5 +1,4 @@
 import React from 'react'
-import MarkdownPage from '../components/Markdown'
 
 const Footer = (props) => {
   const info = props.info
