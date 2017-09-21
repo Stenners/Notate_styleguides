@@ -1,7 +1,8 @@
 # Main config file
 title: "notate"
 description: "A documentation framework for rapid rollout of style guides and component / pattern libraries."
-repo: 'https://github.com/Stenners/Notate'
+repo: "https://github.com/Stenners/Notate"
+homepage: ""
 version: "0.1.0"
 
 # Project imports

@@ -8,16 +8,19 @@ import Page from './Page'
 import Footer from './Footer'
 import Config from '../content/config.yaml'
  
-import '../style/app.scss'; 
+import '../style/app.scss';
+
+const baseHref = Config.homepage.includes('/', 0) ? `/${Config.homepage}/` : `/${Config.homepage}`
+console.log(baseHref)
 
 const App = () => (
   <BrowserRouter>
     <ScrollToTop>
     <div className="app">
-      <Nav navItems={Config.sections} />
+      <Nav navItems={Config.sections} baseHref={baseHref} />
       <Switch>
-        <Route exact path='/' render={(props) => (<Home content={Config} />)} />
-        <Route path='/:page' render={(props) => (<Page content={Config.sections} page={props.match.params.page} />)} />
+        <Route exact path={baseHref} render={(props) => (<Home content={Config} />)} />
+        <Route path={`${baseHref}:page`} render={(props) => (<Page content={Config.sections} page={props.match.params.page} />)} />
       </Switch>
       <Footer info={Config}/>
     </div>

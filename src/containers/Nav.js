@@ -8,11 +8,11 @@ const Nav = (props) => {
   
   return (
     <nav>
-      <Link to={'/'}><img className="logo" src={logo} alt="props.title"/></Link>
+      <Link to={props.baseHref}><img className="logo" src={logo} alt="props.title"/></Link>
       <ul>
         {props.navItems.map((item, i) => {
           if (item.slug) {
-            link = <NavLink exact to={item.slug}>{item.title}</NavLink>
+            link = <NavLink exact to={`${props.baseHref}${item.slug}`}>{item.title}</NavLink>
             headingClass='';
           } else {
             link = item.title ? <div>{item.title}</div> : <div>{item.heading}</div>;
