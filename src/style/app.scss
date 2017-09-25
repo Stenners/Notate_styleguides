@@ -29,15 +29,18 @@
 
 footer {
   background-color: #f7f7f7;
-  padding: 2rem 4rem;
+  padding: 2rem 2rem;
   font-size: 0.8rem;
   color: #333;
   display:flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-left: 240px;
   & > div:last-child {
     text-align: right;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 240px;
+    padding: 2rem 4rem;
   }
 }
 
@@ -52,10 +55,14 @@ nav {
   background-color: #fbfbfb;
   height: 100%;
   box-shadow: 0 0 3px rgba(58, 77, 95, .5);
-  width: 0px;
+  width: 225px;
   overflow: hidden;
   position: fixed;
   padding-top: 22px;
+  left: -999px;
+  &.active {
+    left:0;
+  }
   ul {
     text-align: left;
     list-style: none;
@@ -80,23 +87,36 @@ nav {
     width: 240px;
   }
 }
-
+.navmenu {
+  position: absolute;
+  font-size: 1.5rem;
+  color: #074174;
+  z-index: 10;
+}
 .hero {
-  padding: 3rem 8rem 5rem;
+  padding: 2rem 2rem 4rem;
   background: linear-gradient(#9e15e4, transparent), linear-gradient(90deg, #49c4ff, transparent), linear-gradient(-90deg, #2dead2, transparent);
 	color:white;
   background-blend-mode: screen;
-  //text-align: center;
-  
   h1 {
-    font-size: 8rem;
+    font-size: 6rem;
     color: #ffffff;
     text-shadow: 0 0 4px rgba(7, 73, 166, 0.3);
   }
   h2 {
     color: #ffffff;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 3rem 8rem 5rem;
+    h1 {
+      font-size: 8rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
   }
 }
 
