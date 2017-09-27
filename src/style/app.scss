@@ -1,11 +1,11 @@
-@import './dracula.scss';
-@import './typebase.scss';
-
-.project-example {
-  border: 1px dashed #CECCCC;
-  padding: 1rem;
-  margin: 2rem 0 0;
-  width: 97%;
+@import './src/dracula.scss';
+@import './src/typebase.scss';
+@import './src/footer.scss';
+@import './src/nav.scss';
+@import './src/components.scss';
+// General
+a {
+  color: #0747A6;
 }
 
 .app {
@@ -27,76 +27,10 @@
   }
 }
 
-footer {
-  background-color: #f7f7f7;
-  padding: 2rem 2rem;
-  font-size: 0.8rem;
-  color: #333;
-  display:flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  & > div:last-child {
-    text-align: right;
-  }
-  @media screen and (min-width: 768px) {
-    margin-left: 240px;
-    padding: 2rem 4rem;
-  }
-}
-
-a {
-  color: #0747A6;
-}
-
-nav {
-  font-size: 1rem;
-  font-weight: 300;
-  text-align: center;
-  background-color: #fbfbfb;
-  height: 100%;
-  box-shadow: 0 0 3px rgba(58, 77, 95, .5);
-  width: 225px;
-  overflow: hidden;
-  position: fixed;
-  padding-top: 22px;
-  left: -999px;
-  &.active {
-    left:0;
-  }
-  ul {
-    text-align: left;
-    list-style: none;
-    padding: 0;
-    text-decoration: none;
-    li {
-      padding: 11px 30px;
-    }
-    .heading {
-      margin-top: 1.2rem;
-      //font-size: 1.1rem;
-      border-top: 1px solid #EBEBEB;
-      background-color: white;
-      color: #656565;
-    }
-  }
-  .logo {
-    height: 2.6rem;
-    margin-top: 0.8rem;
-  }
-  @media screen and (min-width: 768px) {
-    width: 240px;
-  }
-}
-.navmenu {
-  position: absolute;
-  font-size: 1.5rem;
-  color: #074174;
-  z-index: 10;
-}
 .hero {
   padding: 2rem 2rem 4rem;
   background: linear-gradient(#9e15e4, transparent), linear-gradient(90deg, #49c4ff, transparent), linear-gradient(-90deg, #2dead2, transparent);
-	color:white;
+  color: white;
   background-blend-mode: screen;
   h1 {
     font-size: 6rem;
@@ -118,30 +52,4 @@ nav {
       font-size: 2rem;
     }
   }
-}
-
-.logo-big {
-  height: 20rem;
-}
-
-.colour-grid {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.colour-wrap {
-  margin: 2rem 0;
-  width: 150px;
-  .colour-block {
-    height: 100px;
-    margin-bottom: 1rem;
-  }
-  .colour-border {
-    border: 1px solid #EBEBEB;
-  }
-}
-
-.github-link {
-  fill: #8c9ba5;
-  margin-right: 0.5rem;
 }

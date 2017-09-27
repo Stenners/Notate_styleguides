@@ -1,0 +1,48 @@
+nav {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  background-color: #fbfbfb;
+  height: 100%;
+  box-shadow: 0 0 3px rgba(58, 77, 95, .5);
+  width: 225px;
+  overflow: hidden;
+  position: fixed;
+  padding-top: 22px;
+  left: -999px;
+  &.active {
+    left:0;
+  }
+  ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+    li {
+      padding: 11px 30px;
+    }
+    .heading {
+      margin-top: 1.2rem;
+      border-top: 1px solid #EBEBEB;
+      background-color: white;
+      color: #656565;
+    }
+  }
+  .logo {
+    height: 2.6rem;
+    margin-top: 0.8rem;
+  }
+  @media screen and (min-width: 768px) {
+    width: 240px;
+    left:0;
+  }
+}
+.navmenu {
+  position: absolute;
+  font-size: 1.5rem;
+  color: #074174;
+  z-index: 10;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

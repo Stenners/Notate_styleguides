@@ -1,0 +1,34 @@
+
+.project-example {
+  border: 1px dashed #CECCCC;
+  padding: 1rem;
+  margin: 2rem 0 0;
+  width: 97%;
+}
+
+.logo-big {
+  height: 20rem;
+}
+
+.colour-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.colour-wrap {
+  margin: 2rem 0;
+  width: 150px;
+  .colour-block {
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+  .colour-border {
+    border: 1px solid #EBEBEB;
+  }
+}
+
+.github-link {
+  fill: #8c9ba5;
+  margin-right: 0.5rem;
+}
