@@ -1,20 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Frame from 'react-frame-component'
+import ReactDOMServer from 'react-dom/server'
 import Config from '../content/config.yaml'
 
 const styleImport = Config.imports.css
 const jsImport = Config.imports.js
 let styleFiles = '', jsFiles = ''
 
-for (let value of styleImport) {
-  styleFiles += `<link rel="stylesheet" href="${value.src}" />`
-}
-for (let value of jsImport) {
-  jsFiles += `<script src="${value.src}"></script>`
-}
-
-let initialContent = `<!DOCTYPE html><html><head>${styleFiles}</head><body><div></div>${jsFiles}</body></html>`
+let initialContent;
 
 class ExampleCode extends React.Component {
 
@@ -24,7 +17,7 @@ class ExampleCode extends React.Component {
       iFrameHeight: '0px'
     }
   }
-  
+
   componentDidMount() {
     const obj = ReactDOM.findDOMNode(this)
     obj.addEventListener('load', () => {
@@ -32,8 +25,29 @@ class ExampleCode extends React.Component {
     })
   }
   
+  buildMarkup() {
+
+    let htmlString = '';
+
+    for (let value of styleImport) {
+      styleFiles += `<link rel="stylesheet" href="${value.src}" />`
+    }
+
+    for (let value of jsImport) {
+      jsFiles += `<script src="${value.src}"></script>`
+    }
+
+    for (let child of this.props.children) {
+      htmlString += ReactDOMServer.renderToStaticMarkup(child);
+    }
+
+    initialContent = `<!DOCTYPE html><html><head>${styleFiles}</head><body><div>${htmlString}</div>${jsFiles}</body></html>`
+
+    return initialContent
+  }
+
   render() {
-    return <Frame className="project-example" style={{height:this.state.iFrameHeight}} frameBorder="0" initialContent={initialContent}>{this.props.children}</Frame>
+    return <iframe title="ep" className="project-example" style={{height:this.state.iFrameHeight}} frameBorder="0" srcDoc={this.buildMarkup()}></iframe>
   }
   
 };
