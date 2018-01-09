@@ -4,9 +4,9 @@ A documentation framework aimed at rapid rollout of style guides and component /
 Pull into your project and customise the baseline content, or pull it apart and make it your own.
 
 ## Quickstart
-1. Check this repo out into your project, wherever it makes sense. 
-2. run `$ yarn`
-3. run `$ yarn start`
+1. Clone this repo into your project, wherever it makes sense. 
+2. run `yarn`
+3. run `yarn start`
 4. start configuring `src/content/config.yaml`
 
 ## How it works
@@ -16,10 +16,8 @@ Pull into your project and customise the baseline content, or pull it apart and 
 
 ## To Do
 * Search
-* React & Angular component compatibility
 * Unit tests
 * Shortcodes for internal components
-* Better design
   
 
 ## Available Scripts

@@ -1,8 +1,7 @@
 {
-  "name": "styleguide",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "",
+  "name": "notate",
+  "version": "1.0.0",
+  "homepage": "http://www.stenners.com/notate/",
   "dependencies": {
     "autoprefixer": "7.1.2",
     "babel-core": "6.25.0",
