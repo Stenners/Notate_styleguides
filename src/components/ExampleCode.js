@@ -45,6 +45,9 @@ class ExampleCode extends React.Component {
       }
     }
 
+    styleFiles = '';
+    jsFiles = '';
+
     initialContent = `<!DOCTYPE html><html><head>${styleFiles}</head><body><div>${htmlString}</div>${jsFiles}</body></html>`
 
     return initialContent
