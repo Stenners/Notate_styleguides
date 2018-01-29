@@ -1,28 +1,22 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Frame from 'react-frame-component'
 import Config from '../content/config.yaml'
 
 const styleImport = Config.imports.css
-let styleFiles = ''
+const jsImport = Config.imports.js
 
-for (let value of styleImport) {
-  styleFiles += `<link rel="stylesheet" href="${value.src}" />`
-}
+let styleFiles = '', jsFiles = ''
 
-const typoStyle = {
-  display: 'flex',
-  justifyContent: 'spaceBetween'
-}
-const glyph = {
-  width: '20%',
-  fontSize: '100px',
-  padding: '0 0 0 20px'
-}
-
-const initialContent = `<!DOCTYPE html><html><head>${styleFiles}</head><body><div></div></body></html>`
+let initialContent;
 
 class Typography extends React.Component {
+
+  constructor() {
+    super()
+    this.state = {
+      iFrameHeight: '0px'
+    }
+  }
 
   componentDidMount() {
     const obj = ReactDOM.findDOMNode(this)
@@ -31,20 +25,37 @@ class Typography extends React.Component {
     })
   }
 
-  render() {
-    return (
-      <Frame className="project-example" frameBorder="0" initialContent={initialContent}>
-        <div>{this.props.typeface}</div>
-        <div style={typoStyle}>
-          <div style={glyph}>Aa</div>
+  buildMarkup() {
+
+    let htmlString = '';
+
+    for (let value of styleImport) {
+      styleFiles += `<link rel="stylesheet" href="${value.src}" />`
+    }
+
+    for (let value of jsImport) {
+      jsFiles += `<script src="${value.src}"></script>`
+    }
+
+    htmlString = `
+      <div>${this.props.typeface}</div>
+      <div style="display: flex;">
+          <div style="width:20%; font-size:100px; padding: 0 0 0 20px">Aa</div>
           <div>
-            <div><h1>ABCDEFGHIJKLMNOPQRSTUVWXYZ</h1></div>
-            <div><h2>abcdefghijklmnopqrstuvwxyz</h2></div>
-            <div><h2>0 1 2 3 4 5 6 7 8 9</h2></div>
+             <div><h1>ABCDEFGHIJKLMNOPQRSTUVWXYZ</h1></div>
+             <div><h2>abcdefghijklmnopqrstuvwxyz</h2></div>
+             <div><h2>0 1 2 3 4 5 6 7 8 9</h2></div>
           </div>
-        </div>
-      </Frame>
-    )
+      </div>
+    `;
+
+    initialContent = `<!DOCTYPE html><html><head>${styleFiles}</head><body><div>${htmlString}</div>${jsFiles}</body></html>`
+
+    return initialContent
+  }
+
+  render() {
+    return <iframe title="ep" className="project-example" style={{height:this.state.iFrameHeight}} frameBorder="0" srcDoc={this.buildMarkup()}></iframe>
   }
 
 };
