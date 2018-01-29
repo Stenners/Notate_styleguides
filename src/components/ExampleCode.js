@@ -37,8 +37,12 @@ class ExampleCode extends React.Component {
       jsFiles += `<script src="${value.src}"></script>`
     }
 
-    for (let child of this.props.children) {
-      htmlString += ReactDOMServer.renderToStaticMarkup(child);
+    if (this.props.children.hasOwnProperty('type')) {
+      htmlString = ReactDOMServer.renderToStaticMarkup(this.props.children);
+    } else {
+      for (let child of this.props.children) {
+        htmlString += ReactDOMServer.renderToStaticMarkup(child);
+      }
     }
 
     initialContent = `<!DOCTYPE html><html><head>${styleFiles}</head><body><div>${htmlString}</div>${jsFiles}</body></html>`
