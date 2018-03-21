@@ -5419,10 +5419,6 @@ react-error-overlay@^2.0.1:
     settle-promise "1.0.0"
     source-map "0.5.6"
 
-react-frame-component@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/react-frame-component/-/react-frame-component-1.1.1.tgz#05b7f5689a2d373f25baf0c9adb0e59d78103388"
-
 react-markdown-component-loader@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/react-markdown-component-loader/-/react-markdown-component-loader-2.2.1.tgz#f2b0317d55d59eece6d7b6017ed7c3740b8319d7"

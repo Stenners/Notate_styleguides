@@ -2,7 +2,7 @@
 title: "notate"
 description: "A documentation framework for rapid rollout of style guides and component / pattern libraries."
 repo: "https://github.com/Stenners/Notate"
-homepage: ""
+homepage: "notate"
 version: "0.1.0"
 
 # Project imports
