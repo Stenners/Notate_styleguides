@@ -13,6 +13,7 @@ class Nav extends React.Component {
   }
 
   render() {
+    console.log(this.props.baseHref);
     return (
       <nav className={activeClass}>
         <Link to={this.props.baseHref}><img className="logo" src={logo} alt="this.props.title"/></Link>

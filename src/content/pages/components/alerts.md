@@ -37,7 +37,7 @@ Alerts are available for any length of text, as well as an optional dismiss butt
 </ExampleCode>
 ```
 
-```
+```html
 <div class="project-example">
   <div class="alert alert-primary" role="alert">
     This is a primary alert—check it out!

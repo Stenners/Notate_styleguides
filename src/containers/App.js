@@ -10,8 +10,7 @@ import Footer from './Footer'
 import Config from '../content/config.yaml'
  
 import '../style/app.scss';
-
-const baseHref = Config.homepage.includes('/', 0) ? `/${Config.homepage}/` : `/${Config.homepage}`
+const baseHref = `/${Config.homepage}/`;
 
 class App extends React.Component {
 
