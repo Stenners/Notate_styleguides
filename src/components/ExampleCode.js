@@ -27,6 +27,9 @@ class ExampleCode extends React.Component {
   
   buildMarkup() {
 
+    styleFiles = '';
+    jsFiles = '';
+
     let htmlString = '';
 
     for (let value of styleImport) {
@@ -44,9 +47,6 @@ class ExampleCode extends React.Component {
         htmlString += ReactDOMServer.renderToStaticMarkup(child);
       }
     }
-
-    styleFiles = '';
-    jsFiles = '';
 
     initialContent = `<!DOCTYPE html><html><head>${styleFiles}</head><body><div>${htmlString}</div>${jsFiles}</body></html>`
 
