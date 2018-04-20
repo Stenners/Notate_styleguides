@@ -1,3 +1,5 @@
+![alt text](src/style/svg/nlogo2.svg | width=100 "Notate")
+
 # Notate
 
 A documentation framework aimed at rapid rollout of style guides and component / pattern libraries.
