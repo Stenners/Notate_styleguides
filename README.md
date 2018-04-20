@@ -1,4 +1,4 @@
-![alt text](src/style/svg/nlogo2.svg | width=100 "Notate")
+![alt text](src/style/svg/nlogo2.svg "Notate")
 
 # Notate
 
